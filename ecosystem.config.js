@@ -24,7 +24,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:yyISACoder/koa-study.git',
       path : '/var/www/koa-pm2',
-      'post-deploy' : 'pm2 reload ecosystem.config.js'
+      'post-deploy' : 'yarn install && pm2 reload ecosystem.config.js'
     }
   }
 };
