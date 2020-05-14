@@ -19,12 +19,12 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'node',
-      host : '212.83.163.1',
+      user : 'root',
+      host : '106.53.46.97',
       ref  : 'origin/master',
-      repo : 'git@github.com:repo.git',
-      path : '/var/www/production',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      repo : 'git@github.com:yyISACoder/koa-study.git',
+      path : '/var/www/koa-pm2',
+      'post-deploy' : 'pm2 reload ecosystem.config.js'
     }
   }
 };
