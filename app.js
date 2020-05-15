@@ -45,7 +45,7 @@ app.use(async (ctx, next) => {
 router.get('/', async (ctx, next) => {
   // ctx.body = 'Hello World'
   ctx.state = {
-    title: 'Koa3'
+    title: 'pm2-deploy'
   }
   await ctx.render('index', ctx.state)
 })
